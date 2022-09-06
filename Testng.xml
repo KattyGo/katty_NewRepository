@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Water Project">
+
+
+    <listeners>
+       <listener class-name="listener.MyListener"></listener>
+    </listeners>
+
+    <test name="chrome">
+        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="version_br" value="102"></parameter>
+        <parameter name="url" value="https://portal-qa1.maytronics.co/#/login"></parameter>
+
+        <classes>
+           <class name="web.success.LoginTest"></class>
+  <!--          <class name="web.success.CreateNewCustomerTest"></class>-->
+        </classes>
+
+    </test>
+</suite>
