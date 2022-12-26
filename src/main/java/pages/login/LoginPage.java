@@ -65,7 +65,7 @@ public class LoginPage extends BasePage {
         return this;
     }
 
-    @Step("Type {username} / {pass}.")
+    @Step("Type {username} / {pass}.")  // entering credential value
     public DashboardPage createLogin(String username, String pass) {
         type_userName(username);
         type_password(pass);
